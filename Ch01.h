@@ -56,6 +56,10 @@ bool checkPermutation(const std::string &str1, const std::string &str2) {
         if (letters[c] < 0)
             return false;
     }
+    
+    for (int i = 0; i < 128; i++) {
+        if (letters[c]) return false;   
+    }
 
     return true;
 }
